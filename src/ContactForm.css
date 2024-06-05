@@ -1,0 +1,201 @@
+/* ContactForm.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-nav a,
+.site-nav button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.site-nav button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  /* For screens less than 768px wide */
+  .main-content {
+    flex-direction: column; /* Stack form and image on small screens */
+  }
+  .form-section,
+  .image-section {
+    flex: 1 1 auto; /* Allow sections to grow/shrink as needed */
+    margin-bottom: 20px; /* Spacing between sections on small screens */
+  }
+}
+
+.form-section {
+  flex: 1;
+}
+
+.form-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.form-section .subheading {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow form elements to wrap on small screens */
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1 0 100%; /* Take full width on small screens */
+  margin-right: 10px;
+  margin-bottom: 5px; /* Reduce bottom margin for vertical spacing */
+}
+
+.form-group label:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block; /* Change to block for vertical layout */
+  font-size: 16px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Make inputs full width */
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 100%; /* Make submit button full width */
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.image-section img {
+  width: 300px;
+  height: 300px; /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Footer Styles */
+
+.site-footer {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px 0; /* Top and bottom padding */
+  text-align: center; /* Center content horizontally */
+}
+
+.footer-content {
+  display: flex; /* Arrange content in a row */
+  justify-content: space-between; /* Distribute content evenly with some spacing */
+  align-items: center; /* Vertically align content */
+  flex-wrap: wrap; /* Wrap content onto multiple lines if needed on smaller screens */
+  margin: 0 auto; /* Center the content horizontally within the footer */
+  max-width: 1024px; /* Set a maximum width for responsiveness */
+}
+
+.site-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.footer-nav {
+  display: flex; /* Arrange navigation links horizontally */
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: #333; /* Dark gray text color */
+  text-decoration: none; /* Remove underlines */
+  padding: 10px 15px; /* Add padding for spacing between links */
+  font-size: 0.9em; /* Adjust font size for readability */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.footer-nav a:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+.social-icons {
+  display: flex; /* Arrange social icons horizontally */
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.social-icons a {
+  color: #333; /* Dark gray icon color */
+  margin-left: 10px; /* Spacing between icons */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+/* Assuming you're using Font Awesome for social icons */
+.fa-github,
+.fa-linkedin-in,
+.fa-instagram {
+  font-size: 1.2em; /* Adjust size of social icons */
+}
