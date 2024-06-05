@@ -80,10 +80,10 @@ const ContactForm = () => {
       <a href="https://github.com/kommineni-venkat" target="_blank" rel="noopener noreferrer">
         <FaGithub />
       </a>
-      <a href="https://github.com/kommineni-venkat" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/venkat-kommineni-993a7327b/" target="_blank" rel="noopener noreferrer">
         <FaLinkedinIn />
       </a>
-      <a href="https://github.com/kommineni-venkat" target="_blank" rel="noopener noreferrer">
+      <a href="https://instagram.com/venky__kommineni" target="_blank" rel="noopener noreferrer">
         <FaInstagram />
       </a>
     </div>
