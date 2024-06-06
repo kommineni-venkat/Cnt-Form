@@ -54,6 +54,16 @@ const ContactForm = () => {
           />
         </div>
         <div>
+          <label htmlFor="phone">Phone Number</label>
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
           <label htmlFor="message">Your message</label>
           <textarea
             id="message"
@@ -71,6 +81,7 @@ const ContactForm = () => {
           <p><strong>First Name:</strong> {submittedData.firstName}</p>
           <p><strong>Last Name:</strong> {submittedData.lastName}</p>
           <p><strong>Email:</strong> {submittedData.email}</p>
+          <p><strong>Phone Number:</strong> {submittedData.phone}</p>
           <p><strong>Message:</strong> {submittedData.message}</p>
         </div>
       )}
